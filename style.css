@@ -560,15 +560,15 @@
   }
 
   footer>div>p {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 
   footer>div>h2 {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 
   footer>div>address {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 
   footer>small {
@@ -885,15 +885,15 @@
   }
 
   footer>div>p {
-    margin-top: 20px;
+    margin:20px 0 0;
   }
 
   footer>div>h2 {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 
   footer>div>address {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 
   footer>small {
