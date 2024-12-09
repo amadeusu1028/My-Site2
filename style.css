@@ -521,12 +521,21 @@
     border: 2px solid;
   }
 
+  form>div>select{
+    color: #000;
+  }
+
+  form>div>select>option{
+    color: #000;
+  }
+
   form>div:nth-child(6) {
     margin-top: 30px;
     text-align: center;
   }
 
   form>div>button {
+    color: #000;
     padding: 10px 40px;
     border-radius: 8px;
     background-color: #fff;
@@ -561,6 +570,7 @@
 
   footer>div>p {
     margin: 20px 0 0;
+    margin-right: 50px;
   }
 
   footer>div>h2 {
@@ -569,6 +579,7 @@
 
   footer>div>address {
     margin: 20px 0 0;
+    margin-left: 50px;
   }
 
   footer>small {
@@ -846,12 +857,21 @@
     border: 2px solid;
   }
 
+  form>div>select{
+    color: #000;
+  }
+
+  form>div>select>option{
+    color: #000;
+  }
+
   form>div:nth-child(6) {
     margin-top: 30px;
     text-align: center;
   }
 
   form>div>button {
+    color: #000;
     padding: 10px 40px;
     border-radius: 8px;
     background-color: #fff;
@@ -886,6 +906,7 @@
 
   footer>div>p {
     margin:20px 0 0;
+    margin-right: 50px;
   }
 
   footer>div>h2 {
@@ -894,6 +915,7 @@
 
   footer>div>address {
     margin: 20px 0 0;
+    margin-left: 50px;
   }
 
   footer>small {
