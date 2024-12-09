@@ -576,6 +576,7 @@
 
   footer>div>p {
     margin-top: 20px;
+    margin-left: 30px;
   }
 
   footer>div>h2 {
@@ -584,6 +585,7 @@
 
   footer>div>address {
     margin-top: 20px;
+    margin-right: 30px;
   }
 
   footer>small {
@@ -907,7 +909,7 @@
 
   footer>div>p {
     margin:20px 0 0;
-    margin-left: 10px;
+    margin-left: 30px;
   }
 
   footer>div>h2 {
@@ -916,7 +918,7 @@
 
   footer>div>address {
     margin: 20px 0 0;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 
   footer>small {
