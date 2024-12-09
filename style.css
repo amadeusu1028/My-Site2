@@ -1,0 +1,750 @@
+@charset "utf-8";
+
+body{
+  width: 390px;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+/* ヘッダー */
+
+header{
+  width: 390px;
+  display: flex;
+  padding: 0 16px;
+  overflow: hidden;
+}
+
+.headline{
+  position: fixed;
+  margin: 0;
+  font-size: 22px;
+  line-height: 64px;
+  z-index: 2;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  right: 10px;
+  z-index: 2;
+}
+
+nav>div>a{
+  display: inline-block;
+  width: 60px;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;  
+  line-height: 64px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav>div>a:hover{
+  background-color: rgba(32, 32, 32, .3);
+}
+
+/* hero画面 */
+
+.hero{
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+video{
+  object-fit: cover;
+  position: relative;
+}
+
+.hero>h1{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 120px;
+}
+
+/* about */
+
+.about{
+  margin-top: 100px;
+  width: 390px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about>h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+.about>p{
+  line-height: 35px;
+}
+
+.about>a>button{
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #666;
+  transition: box-shadow .5s;
+}
+
+.about>a>button:hover{
+  box-shadow: none;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+/* content */
+
+.content{
+  width: 390px;
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content>h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+.content>a>button{
+  margin-top: -20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #666;
+  transition: box-shadow .5s;
+}
+
+.content>a>button:hover{
+  box-shadow: none;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+/* カルーセル */
+
+.my-carousel{
+  width: 900px;
+  height: 350px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.swiper{
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+
+.swiper-wrapper{
+  transition-timing-function: linear;
+}
+
+.swiper-slide:not(.swiper-slide-visible){
+  opacity: .4;
+}
+
+.swiper-slide>img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  transition: 1s linear;
+}
+
+/* contact */
+
+.contact{
+  width: 390px;
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact>h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+form{
+  margin: 50px auto 0;
+  width: 330px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid;
+  background-color: rgba(82, 82, 82, 0.1);
+}
+
+form>h2{
+  text-align: center;
+}
+
+form>div>input,select,textarea{
+  width: 230px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 2px solid;
+}
+
+form>div:nth-child(6){
+  margin-top: 30px;
+  text-align: center;
+}
+
+form>div>button{
+  padding: 10px 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #666;
+  transition: box-shadow .5s;
+}
+
+form>div>button:hover{
+  box-shadow: none;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+/* フッター */
+
+footer{
+  width: 390px;
+  margin-top: 50px;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+footer>div{
+  display: block;
+  justify-content: space-between;
+}
+
+footer>div>p,address{
+  line-height: 32px;
+}
+
+footer>div>p{
+  margin-left: 100px;
+}
+
+footer>div>h2{
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+footer>div>address{
+  margin-top: 32px;
+  margin-right: 100px;
+}
+
+footer>small{
+  display: block;
+  text-align: center;
+}
+
+@media  (min-width: 410px){
+
+  body{
+    width: 430px;
+    margin: 0;
+    background-color: whitesmoke;
+  }
+  
+  /* ヘッダー */
+  
+  header{
+    display: flex;
+    padding: 0 16px;
+  }
+  
+  h2{
+    position: fixed;
+    margin: 0;
+    font-size: 22px;
+    line-height: 64px;
+    z-index: 2;
+  }
+  
+  nav{
+    display: flex;
+    position: fixed;
+    right: 10px;
+    z-index: 2;
+  }
+  
+  nav>div>a{
+    display: inline-block;
+    width: 60px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;  
+    line-height: 64px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  nav>div>a:hover{
+    background-color: rgba(32, 32, 32, .3);
+  }
+  
+  /* hero画面 */
+  
+  .hero{
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  video{
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .hero>h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 120px;
+  }
+  
+  /* about */
+  
+  .about{
+    margin-top: 100px;
+    width: 430px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .about>h2{
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .about>p{
+    line-height: 35px;
+  }
+  
+  .about>a>button{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #666;
+    transition: box-shadow .5s;
+  }
+  
+  .about>a>button:hover{
+    box-shadow: none;
+    background-color: rgba(82, 82, 82, 0.2);
+  }
+  
+  /* content */
+  
+  .content{
+    width: 430px;
+    margin-top: 100px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .content>h2{
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .content>a>button{
+    margin-top: -20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #666;
+    transition: box-shadow .5s;
+  }
+  
+  .content>a>button:hover{
+    box-shadow: none;
+    background-color: rgba(82, 82, 82, 0.2);
+  }
+  
+  /* カルーセル */
+  
+  .my-carousel{
+    width: 900px;
+    height: 350px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .swiper{
+    width: 300px;
+    height: 350px;
+    position: relative;
+  }
+  
+  .swiper-wrapper{
+    transition-timing-function: linear;
+  }
+  
+  .swiper-slide:not(.swiper-slide-visible){
+    opacity: .4;
+  }
+  
+  .swiper-slide>img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    transition: 1s linear;
+  }
+  
+  /* contact */
+  
+  .contact{
+    width: 430px;
+    margin-top: 100px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .contact>h2{
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  form{
+    margin: 50px auto 0;
+    width: 380px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid;
+    background-color: rgba(82, 82, 82, 0.1);
+  }
+  
+  form>h2{
+    text-align: center;
+  }
+  
+  form>div>input,select,textarea{
+    width: 280px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 2px solid;
+  }
+  
+  form>div:nth-child(6){
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  form>div>button{
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #666;
+    transition: box-shadow .5s;
+  }
+  
+  form>div>button:hover{
+    box-shadow: none;
+    background-color: rgba(82, 82, 82, 0.2);
+  }
+  
+  /* フッター */
+  
+  footer{
+    width: 430px;
+    margin-top: 50px;
+    background-color: rgba(82, 82, 82, 0.2);
+  }
+  
+  footer>div{
+    display: block;
+    justify-content: space-between;
+  }
+  
+  footer>div>p,address{
+    line-height: 32px;
+  }
+  
+  footer>div>p{
+    margin-left: 100px;
+  }
+  
+  footer>div>h2{
+    margin-top: 48px;
+    margin-left: 24px;
+  }
+  
+  footer>div>address{
+    margin-top: 32px;
+    margin-right: 100px;
+  }
+
+  footer>small{
+    display: block;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+body{
+  width: 100%;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+/* ヘッダー */
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header>h2{
+  margin: 0;
+  font-size: 32px;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  z-index: 3;
+}
+
+.sp-menu{
+  display: none;
+}
+
+.overlay{
+  display: none;
+}
+
+nav{
+  display: flex;
+  position: fixed;
+  right: 100px;
+  z-index: 2;
+}
+
+nav>div>a{
+  display: inline-block;
+  width: 100px;
+  text-align: center;  
+  line-height: 64px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav>div>a:hover{
+  background-color: rgba(32, 32, 32, .3);
+}
+
+/* hero画面 */
+
+.hero{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video{
+  object-fit: cover;
+  position: relative;
+}
+
+.hero>h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 120px;
+}
+
+/* about */
+
+.about{
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about>h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+.about>p{
+  line-height: 35px;
+}
+
+.about>a>button{
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #666;
+  transition: box-shadow .5s;
+}
+
+.about>a>button:hover{
+  box-shadow: none;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+/* content */
+
+.content{
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.content>h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+.content>a>button{
+  margin-top: -20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #666;
+  transition: box-shadow .5s;
+}
+
+.content>a>button:hover{
+  box-shadow: none;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+/* カルーセル */
+
+.my-carousel{
+  width: 900px;
+  height: 350px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.swiper{
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+
+.swiper-wrapper{
+  transition-timing-function: linear;
+}
+
+.swiper-slide:not(.swiper-slide-visible){
+  opacity: .4;
+}
+
+.swiper-slide>img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  transition: 1s linear;
+}
+
+/* contact */
+
+.contact{
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.contact>h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+form{
+  margin: 50px auto 0;
+  width: 570px;
+  text-align: right;
+  padding: 20px 100px;
+  border: 2px solid;
+  background-color: rgba(82, 82, 82, 0.1);
+}
+
+form>h2{
+  text-align: center;
+}
+
+form>div>input,select,textarea{
+  width: 500px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 2px solid;
+}
+
+form>div:nth-child(6){
+  margin-top: 30px;
+  text-align: center;
+}
+
+form>div>button{
+  padding: 10px 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #666;
+  transition: box-shadow .5s;
+}
+
+form>div>button:hover{
+  box-shadow: none;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+/* フッター */
+
+footer{
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+
+footer>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer>div>p,address{
+  line-height: 32px;
+}
+
+footer>div>p{
+  margin-left: 100px;
+}
+
+footer>div>h2{
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+footer>div>address{
+  margin-top: 32px;
+  margin-right: 100px;
+}
+
+footer>small{
+  display: block;
+  text-align: center;
+}
+
+}
