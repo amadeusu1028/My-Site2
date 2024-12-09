@@ -603,6 +603,7 @@
   }
 
   small {
+    padding-top: 50px;
     display: block;
     text-align: center;
     background-color: rgba(82, 82, 82, 0.2);
@@ -915,6 +916,7 @@
   }
 
   footer>div {
+    text-align: center;
     margin: 0;
     padding: 0;
     height: 100px;
@@ -942,7 +944,9 @@
     margin-right: 0;
   }
 
-  small { display: block;
+  small { 
+    padding-top: 50px;
+    display: block;
     text-align: center;
     background-color: rgba(82, 82, 82, 0.2);
   }
