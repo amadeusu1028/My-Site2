@@ -567,30 +567,23 @@
   }
 
   footer>div {
+    width: 300px;
+    margin: auto;
     display: block;
     text-align: center;
     justify-content: space-between;
   }
 
-  footer>div>p,
-  address {
-    line-height: 32px;
-  }
-
   footer>div>p {
     margin-top: 20px;
-    margin-right: 50px;
-    margin-left: 0;
   }
 
   footer>div>h2 {
-    margin: 20px 0 0;
+    margin-top: 20px; 
   }
 
   footer>div>address {
     margin-top: 20px;
-    margin-right: 0;
-    margin-left: 50px;
   }
 
   footer>small {
@@ -905,19 +898,15 @@
   }
 
   footer>div {
+    width: 300px;
+    margin: auto;
     display: block;
     text-align: center;
     justify-content: space-between;
   }
 
-  footer>div>p,
-  address {
-    line-height: 32px;
-  }
-
   footer>div>p {
     margin:20px 0 0;
-    margin-right: 50px;
   }
 
   footer>div>h2 {
@@ -926,7 +915,6 @@
 
   footer>div>address {
     margin: 20px 0 0;
-    margin-left: 50px;
   }
 
   footer>small {
