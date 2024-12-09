@@ -903,11 +903,12 @@
     display: block;
     text-align: center;
     justify-content: space-between;
+    margin: auto;
   }
 
   footer>div>p {
     margin-top:20px;
-    padding-right: 15px;
+    padding-right: 25px;
   }
 
   footer>div>h2 {
