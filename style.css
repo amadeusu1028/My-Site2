@@ -575,7 +575,7 @@
 
   footer>div>p {
     margin-top: 20px;
-    padding-right: 25px;
+    padding-right: 15px;
   }
 
   footer>div>h2 {
@@ -584,7 +584,7 @@
 
   footer>div>address {
     margin-top: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   footer>small {
@@ -907,7 +907,7 @@
 
   footer>div>p {
     margin-top:20px;
-    padding-right: 25px;
+    padding-right: 15px;
   }
 
   footer>div>h2 {
@@ -916,7 +916,7 @@
 
   footer>div>address {
     margin: 20px 0 0;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   footer>small {
