@@ -19,6 +19,7 @@
   const open = document.querySelector('#open');
   const overlay = document.querySelector('.overlay');
   const close = document.querySelector('#close');
+  const navi = document.querySelectorAll('.nav');
 
   open.addEventListener('click', () =>{
     overlay.classList.add('show');
@@ -29,6 +30,11 @@
     overlay.classList.remove('show');
     open.classList.remove('hide');
   })
+
+  navi.addEventListener('click', () =>{
+    overlay.classList.remove('show');
+    open.classList.remove('hide');
+  });
 
   console.log(innerWidth);
 
