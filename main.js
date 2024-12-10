@@ -19,7 +19,9 @@
   const open = document.querySelector('#open');
   const overlay = document.querySelector('.overlay');
   const close = document.querySelector('#close');
-  const navi = document.querySelectorAll('.nav');
+  const link = document.querySelector('.link');
+  const link2 = document.querySelector('.link2');
+  const link3 = document.querySelector('.link3');
 
   open.addEventListener('click', () =>{
     overlay.classList.add('show');
@@ -29,9 +31,19 @@
   close.addEventListener('click', () =>{
     overlay.classList.remove('show');
     open.classList.remove('hide');
-  })
+  });
 
-  navi.addEventListener('click', () =>{
+  link.addEventListener('click', () =>{
+    overlay.classList.remove('show');
+    open.classList.remove('hide');
+  });
+
+  link2.addEventListener('click', () =>{
+    overlay.classList.remove('show');
+    open.classList.remove('hide');
+  });
+
+  link3.addEventListener('click', () =>{
     overlay.classList.remove('show');
     open.classList.remove('hide');
   });
